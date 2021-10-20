@@ -1,0 +1,109 @@
+/* Setting display properties for the entire body */
+body {
+    background-color: #d9dcd6;
+    margin:0 px;
+    padding:0px;
+    width: 100vw;
+    color:#25274d;
+}
+
+/* Setting customized display properties for jumbotron */
+.jumbotron{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: #29648A;
+    border-radius: 0px;
+}
+
+/* Setting display properties for the main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95vw;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+/* Setting display properties for the form */
+form {
+    width: 20vw;
+    margin: 10px;
+}
+
+/* Setting background color for Search button */
+#button-addon2 {
+    background-color:#2E9CCA;
+}
+
+/* Setting the display properties for current weather  section */
+#weather_info {
+    width: 65vw;
+    margin: 10px;
+
+}
+
+/* Setting the display properties for the displayed */
+.city{
+    margin: 2px;
+    justify-content: center;
+    width:90%;
+    font-size: 20px;
+}
+
+/* Setting display properties for future conditions <div> */
+#five_day_forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+/* Setting display properties for the cards in future conditions <div> */
+#five_days_weather{
+    background-color:#2E9CCA;
+    color: white;
+    margin: 10px;
+}
+
+/* Setting margin for h3 tags */
+h3 {
+    margin: 10px;
+}
+
+/* Setting size of the weather icon */
+.weather-icon img{
+    width: 75px;
+    height: 50px;
+}
+
+
+/* Changes page layout as the width of the screen reduces to 950px */
+@media screen and (max-width:950px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        width: 85vw;
+    }
+    #weather_info {
+        width: 85vw;
+    }
+    
+    #five_day_forecast {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        width:85vw;
+    }
+    #five_days_weather {
+        width:80vw;
+    }
+    .card-body{
+        flex-shrink: 2;
+    }
+
+
+}
